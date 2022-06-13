@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#c9ab6e</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="googlemapsbutton">#F6F6F6</color>
+    <color name="wazebutton">#93C4D3</color>
+    <color name="facebookbutton">#0070BA</color>
+    <color name="button_buscador_filter">#F4F4F4</color>
+    <color name="tag_border">#9E9D9D</color>
+    <color name="filter_off">#F3F1F1</color>
+    <color name="background_details">#F8F7F7</color>
+
+    <color name="principal_color">#3c317a </color>
+    <color name="facebookk">#336AA3</color>
+
+    <color name="subtititlecolor">#6F6F6F</color>
+    <color name="lineperfil">#D5D2D2</color>
+
+
+
+    <color name="tabBarMenu">#F9F9F9</color>
+    <color name="text_material_hint_edittext">#aaa6a6</color>
+    <color name="register_lines">#666666</color>
+    <color name="labelColor">#336AA3</color>
+    <color name="text_login_user_pass">#cacaca</color>
+
+    <color name="cambio_color">#B2B2B2</color>
+
+    <color name="redd">#9A0909</color>
+
+    <color name="semi_white">#9E9D9D</color>
+
+    <color name="other_green">#88C057</color>
+
+
+
+
+</resources>

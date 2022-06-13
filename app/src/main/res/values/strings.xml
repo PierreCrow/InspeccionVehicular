@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">Inspección Vehicular</string>
+
+    <string name="facebook_app_id">198263595569316</string>
+    <string name="fb_login_protocol_scheme">fb198263595569316</string>
+
+</resources>
+

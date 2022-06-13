@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="14">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+            <LinearLayout
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:padding="6dp">
+
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_back_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atras"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:visibility="visible"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/titulo_pais_HomeCompletarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Datos personales"
+                android:textSize="25dp"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/robotomedium"
+                android:text="Nombre completo"
+                android:textSize="17dp" />
+
+            <EditText
+                android:enabled="false"
+                android:background="@drawable/shape_google_button"
+                android:id="@+id/etNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:textColorHint="@color/text_login_user_pass"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textSize="17dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:fontFamily="@font/robotomedium">
+            </EditText>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotomedium"
+                android:text="Usuario"
+                android:textSize="17dp" />
+
+            <EditText
+                android:enabled="false"
+                android:background="@drawable/shape_google_button"
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:textColorHint="@color/text_login_user_pass"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textSize="17dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:fontFamily="@font/robotomedium">
+            </EditText>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotomedium"
+                android:text="Contraseña"
+                android:textSize="17dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/etPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/shape_google_button"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="left|center"
+                    android:hint=""
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/text_login_user_pass"
+                    android:textSize="17dp"></EditText>
+
+                <ImageView
+                    android:id="@+id/ivPass"
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_eye"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@color/principal_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/tvTituloUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/robotomedium"/>
+
+                <TextView
+                    android:id="@+id/tvTituloEmpresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/robotoregular"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.7"
+            android:orientation="vertical"
+            android:background="@drawable/shape_home"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llCultivoAsegurado"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cultivo asegurado"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/subtititlecolor"
+                            android:textSize="22dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/robotomedium"
+                            android:layout_gravity="left"/>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/containerCultivo"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="6dp"
+                            app:cardCornerRadius="8dp"
+                            android:backgroundTint="@color/tabBarMenu"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:layout_centerInParent="true"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical|center_horizontal">
+
+
+                                    <ImageView
+                                        android:id="@+id/ivCultivoAsegurado"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp" />
+
+                                    <TextView
+                                        android:id="@+id/tvCultivoAsegurado"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:fontFamily="@font/robotomedium"
+                                        android:text=""
+                                        android:textColor="@color/principal_color"
+                                        android:textSize="20dp" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:src="@drawable/ic_eye"
+                                    android:visibility="invisible" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llAgregarCultivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inspección de vehículos"
+                            android:textColor="@color/subtititlecolor"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/robotomedium" />
+
+
+                        <TextView
+                            android:id="@+id/tvTodasMarcas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ver todos"
+                            android:textColor="@color/labelColor"
+                            android:textSize="14dp"
+                            android:gravity="right"
+                            android:visibility="gone"/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/rlAgregarCultivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="0dp"
+                        android:visibility="visible">
+
+
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="150dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="9dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/tabBarMenu"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:id="@+id/containerPapa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvPresiembraText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="0dp"
+                                        android:fontFamily="@font/robotobold"
+                                        android:text="Inspecciones pendientes"
+                                        android:textColor="@color/principal_color"
+                                        android:textSize="18dp" />
+
+                                    <TextView
+                                        android:id="@+id/tvCantidadInspecciones"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/robotobold"
+                                        android:text=""
+                                        android:textColor="@color/principal_color"
+                                        android:textSize="25dp" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/ivPresiembraComplete"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_complete"
+                                    android:visibility="gone"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="150dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="9dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/tabBarMenu"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="0dp"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:id="@+id/containerQuinua"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_quinua_home" />
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="20dp"
+                                        android:fontFamily="@font/robotobold"
+                                        android:text="Cultivo de Quinua"
+                                        android:textColor="@color/principal_color"
+                                        android:textSize="20dp" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_complete"
+                                    android:visibility="gone"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="150dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="9dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/tabBarMenu"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="0dp"
+                            android:visibility="gone">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:id="@+id/containerArroz"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_arroz_home" />
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="20dp"
+                                        android:fontFamily="@font/robotobold"
+                                        android:text="Cultivo de Arroz"
+                                        android:textColor="@color/principal_color"
+                                        android:textSize="20dp" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_complete"
+                                    android:visibility="gone"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llFreelancersFavoritas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tutorial"
+                            android:textColor="@color/subtititlecolor"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/robotomedium"/>
+
+
+
+                        <TextView
+                            android:id="@+id/tvTodasFreelancers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ver todos"
+                            android:textColor="@color/labelColor"
+                            android:textSize="14dp"
+                            android:gravity="right"
+                            android:visibility="gone"/>
+
+
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardUseCompatPadding="true"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="8dp"
+                        android:backgroundTint="@color/tabBarMenu"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                          >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_centerInParent="true"
+                                android:clickable="true"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="horizontal"
+                                android:id="@+id/fab_tutorial">
+
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/ic_tuto_home" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="@font/robotomedium"
+                                    android:text="Ver tutorial"
+                                    android:textColor="@color/principal_color"
+                                    android:textSize="20dp" />
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/ic_eye"
+                                android:visibility="invisible" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                    <Button
+                        android:clickable="true"
+                        android:background="@drawable/shape_button_login"
+                        android:id="@+id/btnIniciarInspeccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="INICIAR INSPECCIÓN"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/robotomedium"/>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

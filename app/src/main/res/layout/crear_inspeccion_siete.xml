@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motor 1"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:fontFamily="@font/robotobold"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/llUno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxUno"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvUno"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/llDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxDos"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvDos"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxTres"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvTres"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llCuatro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxCuatro"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvCuatro"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llCinco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxCinco"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvCinco"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llSeis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxSeis"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvSeis"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llSiete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxSiete"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvSiete"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llOcho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxOcho"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvOcho"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llNueve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxNueve"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvNueve"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llDiez"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chbxDiez"
+                    android:buttonTint="@color/principal_color"
+                    android:layout_marginTop="0dp"
+                    android:justificationMode="inter_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="center"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="9dp"
+                    app:cardCornerRadius="10dp"
+                    android:backgroundTint="@color/tabBarMenu"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvDiez"
+                        android:fontFamily="@font/robotomedium"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:justificationMode="inter_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvTituloFotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fotografías"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:fontFamily="@font/robotobold"/>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvTituloIndicacionesFotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indicaciones: Tomar las fotos bla bla bla"
+                android:layout_marginLeft="0dp"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/robotolight"
+                android:justificationMode="inter_word"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/llPictures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivPicture1"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:src="@drawable/fondovaucher"/>
+
+                <ImageView
+                    android:id="@+id/ivPicture2"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/fondovaucher"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivPicture3"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/fondovaucher"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp">
+
+
+                <LinearLayout
+                    android:id="@+id/tvAtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_arrowleftt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:text="Atrás"
+                        android:textColor="@color/principal_color"
+                        android:textSize="19dp" />
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/tvSiguiente"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Siguiente"
+                        android:textSize="19dp"
+
+                        android:textColor="@color/principal_color"
+                        android:fontFamily="@font/robotomedium"/>
+
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_arrowrightt"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <Button
+                android:visibility="gone"
+                android:clickable="true"
+                android:background="@drawable/shape_button_login"
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="GUARDAR"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/robotomedium"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

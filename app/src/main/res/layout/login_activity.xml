@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/shape_splash">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+         >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+               >
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:clickable="true">
+
+
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/loguillooo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Iniciar sesión"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:textSize="26dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/robotomedium"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rlGoogle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true">
+
+                        <EditText
+                            android:background="@drawable/shape_google_button"
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0dp"
+                            android:gravity="left|center"
+                            android:orientation="horizontal"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/text_login_user_pass"
+                            android:hint="Correo electrónico"
+                            android:paddingLeft="20dp"
+                            android:textSize="16dp"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:fontFamily="@font/robotomedium">
+                        </EditText>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true">
+
+                        <EditText
+                            android:id="@+id/etPass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/shape_google_button"
+                            android:fontFamily="@font/robotomedium"
+                            android:gravity="left|center"
+                            android:hint="Contraseña"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/text_login_user_pass"
+                            android:textSize="16dp"></EditText>
+
+                        <ImageView
+                            android:id="@+id/ivPass"
+                            android:layout_width="35dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_eye" />
+
+                    </RelativeLayout>
+
+
+
+                    <Button
+                        android:clickable="true"
+                        android:background="@drawable/shape_button_login"
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="INICIAR SESIÓN"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/robotomedium"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/btnGoogle"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/shape_google_button"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_google"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/titulo_google"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-40dp"
+                                android:text="Ingresar con Google"
+                                android:textSize="17dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/facebookk"
+                                android:fontFamily="@font/robotomedium"
+                                />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnFacebook"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/shape_button_facebook"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/ic_facebook"
+                                android:layout_gravity="center"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-40dp"
+                                android:text="Ingresar con Facebook"
+                                android:textSize="17dp"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/robotomedium"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/robotomedium"
+                        android:text="Registrarse"
+                        android:textColor="@color/principal_color"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tvOlvidePass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Olvide contraseña"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/principal_color"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/robotomedium"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

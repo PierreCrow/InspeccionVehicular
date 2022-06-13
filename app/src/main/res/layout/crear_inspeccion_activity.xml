@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="@color/principal_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/tvTituloCultivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inspección Vehicular"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28dp"
+                    android:fontFamily="@font/robotomedium"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:background="@drawable/shape_home"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:paddingTop="35dp">
+
+            <FrameLayout
+                android:id="@+id/containerViewCrearCultivoPapa"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="14"
+                android:orientation="vertical"></FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/robotolight"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_homeee_cerrar"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@drawable/appu_shape_popups"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/my_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/tvMensaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="left"
+                        android:text="¿Está seguro que desea volver? Se perderán todos los datos ingresados."
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:justificationMode="inter_word"/>
+
+
+                    <TextView
+                        android:id="@+id/tvMensajeSegundaParte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:justificationMode="inter_word"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="right">
+
+                        
+
+                        <Button
+                            android:clickable="true"
+                            android:background="@drawable/shape_button_secondary"
+                            android:id="@+id/btnVolverInicio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:text="Volver a Inicio"
+                            android:textColor="@color/principal_color"
+                            android:textSize="17dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:textAllCaps="false"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/robotoregular"/>
+
+                        <Button
+                            android:clickable="true"
+                            android:background="@drawable/shape_button_login"
+                            android:id="@+id/btnContinuar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:text="Continuar"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:textAllCaps="false"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/robotoregular"/>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

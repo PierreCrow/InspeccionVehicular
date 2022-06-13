@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Datos iniciales"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_marginTop="0dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/robotobold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/robotomedium"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/shape_google_button"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <Spinner
+                        android:id="@+id/spiUbicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="-5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/arrow_down" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/robotomedium"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/shape_google_button"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <Spinner
+                        android:id="@+id/spiCiudad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="-5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/arrow_down" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/robotomedium"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/shape_google_button"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <Spinner
+                        android:id="@+id/spiMarca"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="-5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/arrow_down" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modelo"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/robotomedium"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/shape_google_button"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <Spinner
+                        android:id="@+id/spiModelo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="-5dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/arrow_down" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIN"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/robotomedium"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/shape_google_button"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvVIN"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="0dp"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/robotomedium"
+
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/arrow_down" />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odómetro"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/robotomedium"/>
+
+            <EditText
+                android:background="@drawable/shape_google_button"
+                android:id="@+id/etOdometro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:textColorHint="@color/text_login_user_pass"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textSize="18dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/register_lines"
+                android:inputType="number"
+                android:fontFamily="@font/robotomedium">
+            </EditText>
+
+
+
+
+
+            <TextView
+                android:fontFamily="@font/robotomedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de recepción"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp" />
+
+            <RelativeLayout
+                android:background="@drawable/shape_google_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvFechaRecepción"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="0dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="0dp"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:gravity="center|left" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/btnFechaSiembra"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/icon_calendarioo" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:fontFamily="@font/robotomedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de entrega"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp" />
+
+            <RelativeLayout
+                android:background="@drawable/shape_google_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvFechaEntrega"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="0dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="0dp"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:gravity="center|left"/>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/icon_calendarioo" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:fontFamily="@font/robotomedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de revisión"
+                android:layout_marginLeft="0dp"
+                android:textSize="17dp"
+                android:layout_marginTop="30dp" />
+
+            <RelativeLayout
+                android:background="@drawable/shape_google_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:padding="0dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tvFechaRevision"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="0dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="0dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="0dp"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:gravity="center|left"/>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/icon_calendarioo" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/tvSiguiente"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Siguiente"
+                    android:textSize="19dp"
+
+                    android:textColor="@color/principal_color"
+                    android:fontFamily="@font/robotomedium"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrowrightt"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

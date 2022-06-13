@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@drawable/appu_shape_popups"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/my_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingrese VIN"
+                        android:layout_marginLeft="0dp"
+                        android:textSize="17dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/robotomedium"/>
+
+                    <EditText
+                        android:background="@drawable/shape_google_button"
+                        android:id="@+id/etVin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left|center"
+                        android:orientation="horizontal"
+                        android:textColorHint="@color/text_login_user_pass"
+                        android:hint="VIN020384834"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textSize="18dp"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/register_lines"
+                        android:fontFamily="@font/robotomedium" />
+
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvVins"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <Button
+                        android:layout_gravity="center|right"
+                        android:id="@+id/btnClose"
+                        android:clickable="true"
+                        android:background="@drawable/shape_button_login"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Cerrar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:layout_marginTop="30dp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
